@@ -1,0 +1,385 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lora&family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(4 11 38);
+    display: flex;
+    flex-direction: column;
+}
+.sidebar{
+    background-color: black;
+    width:20vw;
+    height: 100vh;;
+    transition:transform 0.60s ease-in;
+    position:fixed;
+    
+    left:0px;
+    min-width:147px;
+    top:0px;
+}
+.sidebargo{
+    transform: translate(-186px 0px);
+    position:fixed;
+    visibility: hidden;
+    z-index: 2;
+    
+}
+.sidebar nav{
+    margin: 0;
+    padding: 20px;
+    color:#fdffff;
+    
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    margin: 0;
+    cursor:pointer;
+    padding: 7.5vh 0vw;
+    
+   
+    padding-left: 6vw;
+    
+    
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: white;
+    
+    
+
+}
+.hamburger{
+    background-color: black;
+   position:fixed;
+  
+   align-self: start;
+   width:100vw;
+   height:6vh;
+
+}
+.ham {
+    margin-top:  1.5vh;
+    margin-left: 10px;
+    transition:tranceform(2s);
+    cursor: pointer;
+}
+
+
+.cross{
+    margin-top:  1.5vh;
+    margin-left: 10px;
+    transition:tranceform(.700s);
+    cursor: pointer;
+}
+
+
+
+.container2{
+    display: flex;
+    
+    flex-wrap:wrap;
+    background-color: rgb(4 11 38);
+    margin: 0;
+    
+
+    justify-content: center;
+    min-height: 100vh;
+    
+    
+}
+.main2{
+  
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    align-items: center;
+    justify-content: center;
+    min-width: 294px;
+
+}
+.info2{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 77vh;
+    width: 100%;
+}
+.h1{justify-self: start;
+    align-self: flex start;
+    margin:10px 0;
+    color: white;
+    color: #e2e1f0;
+    padding: 0 1vw;
+    font-size: 39px;
+    font-family: 'Noto Sans', sans-serif;
+   
+}
+.ma{
+    display: flex;
+    margin: 10px 10px;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    color:#7a7988;
+    font-family: 'Cinzel', serif;
+    
+}
+.dashboard{
+    background-color:transparent;
+    
+    border-width: 2px;
+    border-color: #7a7988;
+    border-style:solid;
+    border-radius: 73px;
+    height: 5vh;
+    margin-top: 25px;
+    width: 60vw;
+    
+}
+.dashboard nav ul{
+    display: flex;
+    height: 5vh;
+    
+    border-color: black;
+    
+    align-items: center;}
+
+    .dashboard nav ul li{
+     display: flex;
+        
+    cursor: pointer;
+    list-style:none ;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2vw;
+    /*padding-bottom: 1.4%;
+    padding-top: 0.5%;*/
+    color: #f4e7ee;
+    color:#a4a3b2;
+   
+   height: 3vh;
+   align-items: center;
+   justify-content: center;
+    
+    /*background-color: aqua;*/
+    width:50em;
+    /*border-width: 4px;
+    border-color: black;
+    border-style:solid;*/
+    border-radius: 73px;
+    height: 5vh;
+    /*padding-left: 10vw;*/
+}
+    
+
+
+/*.dashboard nav ul li:hover{
+    background-color: rgb(199, 103, 19);
+    
+    /*border-width: 4px;
+    border-color: black;
+    border-style:solid;
+    border-radius: 73px;
+    
+
+}*/
+.cont{
+    display: flex;
+    flex-direction: column;
+    min-height: 48vh;
+    justify-content: center;
+    width:100%;
+
+}
+
+
+
+.sub{
+    display:block;
+    padding-left: 33px;
+
+
+}
+.clg{color:#7a7988;
+    font-size: 22px;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+.year{
+    color:#7a7988;
+    font-size: 17px;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+
+ 
+.devpic{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin: 6vh 0px;
+    padding-top: 1vh;
+    min-width:300px;
+    
+}
+.devpic img{
+    width:80%;
+    
+}
+
+
+.skillcont{
+    display:flex;
+    flex-direction:column;
+    
+    
+
+    
+    
+   z-index: 1.5;
+    ;
+    
+}
+.educont{
+   
+    
+    width:56vw ;
+    align-self: center;
+    /*position:relative;
+    bottom:47.9vh;*/
+    margin-top: 21px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    z-index: 1.5;
+  
+    
+    
+}
+
+.h2{
+    color: #f4e7ee;
+    color:#7a7988;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-evenly;
+    margin:20px 78px;
+    
+    
+    
+    
+}
+.h2 h4{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 15%;
+    
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+
+.h2 div.grad{
+    background-color: rgb(161, 160, 238);
+    align-self: center;
+    margin-left: 10px;
+    width: 85%;
+     border-radius:11px;
+     display: flex;
+     flex-direction: row;
+    
+    
+    padding: 0%;
+    height: .5vh;
+    color:rgb(9, 128, 208);
+}
+
+.grad div.programing{
+    background-color: rgb(9, 128, 208);
+    height:0.5vh;
+    width: 95%;
+    border-radius:29px;
+
+}
+.grad div.html5{
+    
+    background-color: rgb(9, 128, 208);
+    height:.5vh ;
+
+    width: 95%;
+    border-radius:29px;
+}
+.grad div.css5{
+    background-color: white;
+    height: 0.5vh;
+    width:70%;
+    background-color: rgb(9, 128, 208);
+    
+    border-radius:29px;
+
+}
+.grad div.jav{
+    
+    height: .5vh;
+    background-color: rgb(9, 128, 208);
+    width: 80%;
+    border-radius:29px;
+
+}
+.grad div.designing{
+    background-color: rgb(9, 128, 208);
+    height:0.5vh;
+    width: 65%;
+    border-radius:29px;
+}
+.sub div{
+    margin: 20px 0;
+}
+.footer{
+    background-color: black;
+   position: sticky;
+  
+    bottom: 0px;
+   align-items: center;
+   width:100vw;
+   height:6vh;
+   align-self: flex-end;
+    
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    flex-wrap: wrap;
+    left: 0px;}
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        width: 156px;
+        
+    }
+    
+    .copy{
+          position: absolute;
+          right: 0px;
+          font-size: .7vw;
+          color: #7a7988;
+          
+          padding-right: 32px;
+        }
+
+@media screen and (max-width: 450px){
+    .h2 h4{
+        padding-left:5vw;
+    }
+}
+    
+
