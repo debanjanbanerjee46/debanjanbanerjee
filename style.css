@@ -13,7 +13,7 @@
     position:fixed;
     top:25px;
     left:0px;
-    min-width:147px;
+    min-width:161px;
     top:0px;
     z-index: 2;
     transition-delay:2s ;
@@ -170,8 +170,11 @@
     padding:7px 20px;
     border-radius:22px;
     color:white;
-    background-color: rgb(43, 165, 127);
+    background-color: transparent;
     cursor: pointer;
+}
+.buttons button:hover{
+    background:  linear-gradient(to right,rgb(206, 6, 6),rgba(232, 87, 29, 0.655),rgba(36, 36, 209, 0.66), rgb(12, 12, 226))
 }
 .footer{
     background-color: black;
@@ -181,8 +184,9 @@
    align-items: center;
    width:100vw;
    height:6vh;
-   position: absolute;
+   position: sticky;
     bottom: 0px;
+    left:0;
   display: flex;
     justify-content: center;
     z-index: 1;
