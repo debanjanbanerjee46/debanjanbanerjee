@@ -209,6 +209,7 @@ section{
         .form{
             width: 61%;
             justify-content: center;
+            margin-top: 4vh;
         }
         
         .submit{
@@ -246,8 +247,10 @@ section{
             margin-bottom: 20px;
         }
         .myinfo h6{
-            color:#b5b3d2;
+            color: #5087b3;
+        font-size: 1.5em;
         }
+        
 
         .alert{
             padding: 0 24vw;
@@ -552,7 +555,7 @@ section{
           background: linear-gradient(to right,rgb(206, 6, 6),rgba(232, 87, 29, 0.655),rgba(36, 36, 209, 0.66), rgb(12, 12, 226));
       }
       .sub div{
-          margin: 17px 0;
+          margin: 7px 0;
       }
       
           
@@ -718,9 +721,7 @@ section{
                 margin:0px auto;
                 margin-bottom: 20px;
             }
-            .myinfo h6{
-                color:#b5b3d2;
-            }
+           
             .icons{
                 display: flex;
                 justify-content: space-between;
@@ -753,6 +754,7 @@ section{
             .contact h1{
                 
                 color:beige;
+                margin-top: 10vh;
             }
             #contact{
                 height:90vh;
@@ -761,6 +763,9 @@ section{
                 color: #e2e1f0;
                 height: 10%;
 
+            }
+            #projects span h1{
+                margin-top: 10vh;
             }
             .prjimz{
                 height: 200px;
@@ -852,9 +857,7 @@ section{
             width: 61vw;
             margin-bottom: 20px;
         }
-        .myinfo h6{
-            color:#b5b3d2;
-        }
+        
         .icons{
             display: flex;
             justify-content: space-between;
@@ -946,6 +949,7 @@ section{
         .navbar ul{
             padding: 0;
             margin: 0;
+            height: 100%;
 
         }
         .navbar ul li{
