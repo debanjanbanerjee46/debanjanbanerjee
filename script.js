@@ -1,21 +1,5 @@
 
-document.querySelector('.cross').style.display='none';
 
-document.querySelector('.hamburger').addEventListener("click",()=>{
-    document.querySelector('.sidebar').classList.toggle('sidebargo')
-    if(document.querySelector('.sidebar').classList.contains('sidebargo')){
-        document.querySelector('.ham').style.display ='inline'
-        document.querySelector('.cross').style.display='none'
-    }
-    else{
-        (document.querySelector('.sidebar').classList.contains('sidebargo'))
-        {
-         document.querySelector('.cross').style.display ='inline'
-         document.querySelector('.ham').style.display='none'
-
-        }
-    }
-})
 document.querySelector('.skillcont').style.display='flex';
 document.querySelector('.educont').style.display='none';
 document.querySelector('.skill').style.background='rgb(199, 103, 19)';
@@ -31,7 +15,20 @@ document.querySelector('.skill').addEventListener("click",()=>{
 
 })
 
+let icon=document.getElementById("ham3");
 
+       
+        icon.addEventListener("click",()=>{
+           if(document.querySelector('.navbar').classList.contains('navbargo')){
+            document.querySelector('.navbar').classList.remove('navbargo');
+            document.querySelector('.ham').classList.remove('hamgo');
+           }
+           else{
+            document.querySelector('.navbar').classList.add('navbargo');
+            document.querySelector('.ham').classList.add('hamgo');
+            
+           }
+        })
 document.querySelector('.education').addEventListener("click",()=>{
     
     document.querySelector('.skillcont').style.display='none'
@@ -41,3 +38,22 @@ document.querySelector('.education').addEventListener("click",()=>{
     document.querySelector('.education').style.color='white'
     document.querySelector('.skill').style.color='#7a7988'
 })
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll(".navbar ul li");
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+});
