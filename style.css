@@ -912,6 +912,15 @@ section{
                
                
             }
+            .myinfo {
+                display: block;
+                width: 86vw;
+                margin-bottom: 20px;
+            }
+            .myinfo h6 {
+                color: #5087b3;
+                font-size: 1.1em;
+            }
             .navbar ul{
                 display: flex;
                 flex-direction:column;
