@@ -921,6 +921,13 @@ section{
                 
                 
             }
+            .myinfo{
+                width: 78vw;
+            }
+            .myinfo h6 {
+                color: #5087b3;
+                font-size: 1em;
+            }
             .navbargo{transition:height 0.5s ease-in;
                 height: 100vh;
                position: fixed;
